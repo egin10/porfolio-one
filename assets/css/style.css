@@ -1,0 +1,71 @@
+:root {
+    --primary : #f8f8f8;
+    --secondary : #204969;
+}
+
+html, body {
+    font-family: 'Courier New', Courier, monospace;
+    background-color: var(--primary);
+    margin-top: 1.9rem;
+    height: 100%;
+    overflow: hidden;
+    scroll-behavior: smooth;
+}
+
+.navbar-dark, .bg-dark {
+    background-color: transparent !important;
+}
+
+.nav-item a, .navbar-brand{
+    color: var(--secondary) !important;
+}
+
+.navbar-toggler-icon, .navbar-toggler {
+    background-color: var(--secondary) !important;
+}
+
+.screen-page {
+    display: flex;
+}
+
+.bg-side {
+    display: flex;
+    height: 620px;
+    align-items: center;
+    z-index: 1;
+}
+
+.left {
+    background-color: var(--primary);
+    color: var(--secondary);
+    border-radius: 10px;
+}
+
+.right {
+    background-color: var(--secondary);
+    color: var(--primary);
+    border-radius: 10px;
+}
+
+.page-one {
+    position: absolute;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    transform: translate(10%, -5%);
+}
+
+.page-one h1 {
+    font-size: 140px;
+    text-shadow: -1px -1px 3px #ffffff;
+    margin: 0;
+}
+
+.page-one h2 {
+    margin: 0;
+    font-size: 70px;
+    text-shadow: 1px 1px 3px #ffffff;
+}
